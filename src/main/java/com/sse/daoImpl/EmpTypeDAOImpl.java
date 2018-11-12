@@ -2,37 +2,37 @@ package com.sse.daoImpl;
 
 import java.util.List;
 
-import com.sse.dao.FacultyDAO;
-import com.sse.model.Faculty;
+import com.sse.dao.EmpTypeDAO;
+import com.sse.model.EmpType;
 
-public class FacultyDAOImpl implements FacultyDAO {
+public class EmpTypeDAOImpl implements EmpTypeDAO {
 
 	@Override
-	public List<Faculty> findAll() {
+	public List<EmpType> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Faculty facultyById(String id) {
+	public EmpType findById(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int createFaculty(Faculty fac) {
+	public int create(EmpType et) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int deleteFacById(String id) {
+	public int deleteById(String id) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateFac(Faculty fac) {
+	public int update(EmpType et) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

@@ -2,37 +2,37 @@ package com.sse.daoImpl;
 
 import java.util.List;
 
-import com.sse.dao.FacultyDAO;
-import com.sse.model.Faculty;
+import com.sse.dao.EmpProfileDAO;
+import com.sse.model.EmpProfile;
 
-public class FacultyDAOImpl implements FacultyDAO {
+public class EmpProfileDAOImpl implements EmpProfileDAO {
 
 	@Override
-	public List<Faculty> findAll() {
+	public List<EmpProfile> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Faculty facultyById(String id) {
+	public EmpProfile findById(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int createFaculty(Faculty fac) {
+	public int create(EmpProfile ep) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int deleteFacById(String id) {
+	public int deleteById(String id) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateFac(Faculty fac) {
+	public int update(EmpProfile ep) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

@@ -1,22 +1,55 @@
 package com.sse.model;
 
 public class DegreeMajor {
+	private int catId;
+	private String levelId;
 	private String majorCode;
 	private String major;
-	
-	public DegreeMajor(){
+	private int degreeId;
+
+	public DegreeMajor() {
 		super();
 	}
-	
-	public DegreeMajor(String major){
+
+	public DegreeMajor(int catId, String levelId, String major, int degreeId) {
 		super();
+		this.catId = catId;
+		this.levelId = levelId;
 		this.major = major;
+		this.degreeId = degreeId;
 	}
-	
-	public DegreeMajor(String majorCode, String major){
+
+	public DegreeMajor(int catId, String levelId, String majorCode, String major, int degreeId) {
 		super();
+		this.catId = catId;
+		this.levelId = levelId;
 		this.majorCode = majorCode;
 		this.major = major;
+		this.degreeId = degreeId;
+	}
+
+	public int getCatId() {
+		return catId;
+	}
+
+	public void setCatId(int catId) {
+		this.catId = catId;
+	}
+
+	public String getLevelId() {
+		return levelId;
+	}
+
+	public void setLevelId(String levelId) {
+		this.levelId = levelId;
+	}
+
+	public int getDegreeId() {
+		return degreeId;
+	}
+
+	public void setDegreeId(int degreeId) {
+		this.degreeId = degreeId;
 	}
 
 	public String getMajorCode() {
@@ -37,6 +70,7 @@ public class DegreeMajor {
 
 	@Override
 	public String toString() {
-		return "DegreeMajor [majorCode=" + majorCode + ", major=" + major + "]";
-	}	
+		return "DegreeMajor [catId=" + catId + ", levelId=" + levelId + ", majorCode=" + majorCode + ", major=" + major
+				+ ", degreeId=" + degreeId + "]";
+	}
 }

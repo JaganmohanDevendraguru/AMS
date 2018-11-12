@@ -2,37 +2,37 @@ package com.sse.daoImpl;
 
 import java.util.List;
 
-import com.sse.dao.FacultyDAO;
-import com.sse.model.Faculty;
+import com.sse.dao.StdPermissionDAO;
+import com.sse.model.StdPermission;
 
-public class FacultyDAOImpl implements FacultyDAO {
+public class StdPermissionDAOImpl implements StdPermissionDAO {
 
 	@Override
-	public List<Faculty> findAll() {
+	public List<StdPermission> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Faculty facultyById(String id) {
+	public StdPermission findById(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public int createFaculty(Faculty fac) {
+	public int create(StdPermission sp) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int deleteFacById(String id) {
+	public int deleteById(String id) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int updateFac(Faculty fac) {
+	public int update(StdPermission sp) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

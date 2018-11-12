@@ -15,7 +15,7 @@ public class University {
 	private String state;
 	private int zip;
 	private String country;
-	
+
 	public String getAddress() {
 		return address;
 	}
@@ -31,7 +31,7 @@ public class University {
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	
+
 	public University() {
 		super();
 	}
@@ -51,7 +51,7 @@ public class University {
 		this.zip = zip;
 		this.country = country;
 	}
-	
+
 	public University(String uni_name, String president, String email, String phone, String street, String address,
 			String city, String state, int zip, String country) {
 		super();
@@ -77,56 +77,73 @@ public class University {
 	public String getUni_code() {
 		return uni_code;
 	}
+
 	public void setUni_code(String uni_code) {
 		this.uni_code = uni_code;
 	}
+
 	public String getUni_name() {
 		return uni_name;
 	}
+
 	public void setUni_name(String uni_name) {
 		this.uni_name = uni_name;
 	}
+
 	public String getPresident() {
 		return president;
 	}
+
 	public void setPresident(String president) {
 		this.president = president;
 	}
+
 	public String getEmail() {
 		return email;
 	}
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 	public String getPhone() {
 		return phone;
 	}
+
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+
 	public String getStreet() {
 		return street;
 	}
+
 	public void setStreet(String street) {
 		this.street = street;
 	}
+
 	public String getCity() {
 		return city;
 	}
+
 	public void setCity(String city) {
 		this.city = city;
 	}
+
 	public String getState() {
 		return state;
 	}
+
 	public void setState(String state) {
 		this.state = state;
 	}
+
 	public int getZip() {
 		return zip;
 	}
+
 	public void setZip(int zip) {
 		this.zip = zip;
 	}
-	
+
 }

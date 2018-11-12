@@ -1,15 +1,23 @@
 package com.sse.model;
 
+import java.util.Date;
+
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Email;
+
 public class Student {
 	private String stuId;
 	private String firstName;
 	private String lastName;
+	@Size(min = 5, max = 16, message = "Please enter between {min} and {max} characters.")
 	private String userName;
 	private String password;
 	private String deptId;
 	private int ssn;
 	private String level;
 	private String major;
+	@Email
 	private String email;
 	private int phone;
 	private String street;
@@ -20,14 +28,18 @@ public class Student {
 	private String country;
 	private String stuType;
 	private String passport;
-	
+	private String authToken;
+	private String activeFlag;
+	private Date lastUpdateTime;
+
 	public Student() {
 		super();
 	}
 	
 	public Student(String firstName, String lastName, String userName, String password, String deptId,
 			int ssn, String level, String major, String email, int phone, String street, String address, String city,
-			String state, int zip, String country, String stuType, String passport) {
+			String state, int zip, String country, String stuType, String passport, String authToken, String activeFlag
+			,Date lastUpdateTime) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -47,11 +59,15 @@ public class Student {
 		this.country = country;
 		this.stuType = stuType;
 		this.passport = passport;
+		this.authToken = authToken;
+		this.activeFlag = activeFlag;
+		this.lastUpdateTime = lastUpdateTime;
 	}
 	
 	public Student(String stuId, String firstName, String lastName, String userName, String password, String deptId,
 			int ssn, String level, String major, String email, int phone, String street, String address, String city,
-			String state, int zip, String country, String stuType, String passport) {
+			String state, int zip, String country, String stuType, String passport, String authToken,String activeFlag
+			,Date lastUpdateTime) {
 		super();
 		this.stuId = stuId;
 		this.firstName = firstName;
@@ -72,6 +88,9 @@ public class Student {
 		this.country = country;
 		this.stuType = stuType;
 		this.passport = passport;
+		this.authToken = authToken;
+		this.activeFlag = activeFlag;
+		this.lastUpdateTime = lastUpdateTime;
 	}
 
 	public String getStuId() {
@@ -225,6 +244,30 @@ public class Student {
 	public void setPassport(String passport) {
 		this.passport = passport;
 	}
+	
+	public String getActiveFlag() {
+		return activeFlag;
+	}
+
+	public void setActiveFlag(String activeFlag) {
+		this.activeFlag = activeFlag;
+	}
+
+	public String getAuthToken() {
+		return authToken;
+	}
+
+	public void setAuthToken(String authToken) {
+		this.authToken = authToken;
+	}
+	
+	public Date getLastUpdateTime() {
+		return lastUpdateTime;
+	}
+
+	public void setLastUpdateTime(Date lastUpdateTime) {
+		this.lastUpdateTime = lastUpdateTime;
+	}
 
 	@Override
 	public String toString() {
@@ -232,7 +275,8 @@ public class Student {
 				+ userName + ", password=" + password + ", deptId=" + deptId + ", ssn=" + ssn + ", level=" + level
 				+ ", major=" + major + ", email=" + email + ", phone=" + phone + ", street=" + street + ", address="
 				+ address + ", city=" + city + ", state=" + state + ", zip=" + zip + ", country=" + country
-				+ ", stuType=" + stuType + ", passport=" + passport + "]";
+				+ ", stuType=" + stuType + ", passport=" + passport + ", authToken=" + authToken +""
+				+ ",lastUpdateTime" + lastUpdateTime + ", activeFlag" + activeFlag +"]";
 	}
 	
 }

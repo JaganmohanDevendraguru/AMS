@@ -10,4 +10,6 @@ public interface StudentDAO {
 	public int create(Student cs);
 	public int deleteById(int id);
 	public int update(Student cs);
+	public Student findByEmail(String email);
+	public Student findByToken(String token);
 }
